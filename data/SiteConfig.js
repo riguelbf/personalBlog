@@ -11,7 +11,7 @@ module.exports = {
   siteDescription:
     "Just a blog from a simple developer", // Website description used for RSS feeds/meta description tag.
   siteCover:
-    "https://haysclark.github.io/gatsby-starter-casper/images/blog-cover.jpg", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+    "http://lancedesign.org/en/wp-content/uploads/2016/05/Website-Design-Background-1.jpg", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
   siteRss: "/rss.xml", // Path to the RSS file.
   siteRssAuthor: "Riguel Figueiro", // The author name used in the RSS file
