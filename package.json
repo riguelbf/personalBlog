@@ -90,5 +90,5 @@
       "remark-preset-lint-recommended"
     ]
   },
-  { "engines" : { "node" : "<7" } }
+  "engines" : { "node" : "<7" }
 }
