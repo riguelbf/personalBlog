@@ -17,6 +17,18 @@ import PageDescription from "../components/PageDescription/PageDescription";
 import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
 
+import wallpaper from '../../public/images/Design-Background.jpg'
+
+const AvatarHome = () => (
+  <img 
+    src="https://avatars2.githubusercontent.com/u/7014252?s=460&v=4" 
+    style={{
+      height: 300,
+      borderRadius: '50%'
+    }}
+  />
+)
+
 class IndexTemplate extends React.Component {
   state = {
     menuOpen: false
@@ -68,7 +80,7 @@ class IndexTemplate extends React.Component {
           {/* All the main content gets inserted here */}
           <div className="home-template">
             {/* The big featured header */}
-            <MainHeader cover={config.siteCover}>
+            <MainHeader cover={wallpaper}>
               <MainNav overlay={config.siteCover}>
                 <BlogLogo logo={config.siteLogo} title={config.siteTitle} />
                 <MenuButton
@@ -78,6 +90,7 @@ class IndexTemplate extends React.Component {
               </MainNav>
               <div className="vertical">
                 <div className="main-header-content inner">
+                  <AvatarHome />
                   <PageTitle text={config.siteTitle} />
                   <PageDescription text={config.siteDescription} />
                   <SocialMediaIcons
