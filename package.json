@@ -89,5 +89,6 @@
     "plugins": [
       "remark-preset-lint-recommended"
     ]
-  }
+  },
+  { "engines" : { "node" : "<7" } }
 }
