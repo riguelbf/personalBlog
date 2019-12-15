@@ -7,6 +7,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     
+    - name: Install Packages
+      run: yarn
+    
     - name: Build
       run: yarn build
 
