@@ -6,6 +6,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v1
+      with:
+        node-version: '<7'
     
     - name: Install Packages
       env:
