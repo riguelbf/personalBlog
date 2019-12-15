@@ -10,10 +10,10 @@ jobs:
     - name: Install Packages
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      run: yarn
+      run: npm install
     
     - name: Build
-      run: yarn build
+      run: npm build
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
