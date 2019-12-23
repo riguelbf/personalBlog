@@ -20,7 +20,12 @@ jobs:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       run: npm install
         
-    - name: Build
+    - name: Node Js for gatsby
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+        
+    - name: Build Project
       run: npm run build
 
     - name: Deploy
