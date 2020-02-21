@@ -1,6 +1,6 @@
 import React from "react";
 import injectSheet from "react-jss";
-import { MuiThemeProvider } from "@material-ui/core/styles";
+// import { MuiThemeProvider } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
@@ -26,7 +26,7 @@ const InfoBox = asyncComponent(
       .then(module => {
         return module;
       })
-      .catch(error => {}),
+      .catch(error => { }),
   <Loading
     overrides={{ width: `${theme.info.sizes.width}px`, height: "100vh", right: "auto" }}
     afterRight={true}
@@ -37,14 +37,14 @@ class Layout extends React.Component {
   timeouts = {};
   categories = [];
 
-  componentDidMount() {
+  componentDidMount () {
     this.props.setIsWideScreen(isWideScreen());
     if (typeof window !== "undefined") {
       window.addEventListener("resize", this.resizeThrottler, false);
     }
   }
 
-  componentWillMount() {
+  componentWillMount () {
     if (typeof localStorage !== "undefined") {
       const inLocal = +localStorage.getItem("font-size-increase");
 
@@ -77,7 +77,7 @@ class Layout extends React.Component {
     this.props.setIsWideScreen(isWideScreen());
   };
 
-  render() {
+  render () {
     const { children, data } = this.props;
 
     // TODO: dynamic management of tabindexes for keybord navigation

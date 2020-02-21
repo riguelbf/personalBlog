@@ -1,14 +1,11 @@
-// This is a custom theme, for details go to http://forgatsby.greglobinski.com/customize-personal-blog-starter/
-
 import { createMuiTheme } from "@material-ui/core/styles";
 import Color from "color";
-
 import colors from "./new-colors";
 
 const theme = createMuiTheme({
   base: {
     colors: {
-      background: colors.background,
+      background: colors.white,
       text: colors.bright,
       link: colors.accent,
       linkHover: Color(colors.accent)
@@ -36,7 +33,7 @@ const theme = createMuiTheme({
       menuLinkHover: colors.accent
     },
     sizes: {
-      width: 320,
+      width: 350,
       headerHeight: 170
     },
     fonts: {
@@ -62,13 +59,13 @@ const theme = createMuiTheme({
   },
   main: {
     colors: {
-      background: colors.background,
-      title: colors.bright,
-      subTitle: colors.bright,
-      meta: colors.bright,
-      content: colors.bright,
-      footer: colors.bright,
-      contentHeading: colors.bright,
+      background: colors.white,
+      title: colors.dark,
+      subTitle: colors.import,
+      meta: colors.import,
+      content: colors.import,
+      footer: colors.import,
+      contentHeading: colors.import,
       blockquoteFrame: colors.dark,
       link: colors.accent,
       linkHover: colors.dark,
@@ -150,7 +147,6 @@ const theme = createMuiTheme({
     primary: {
       main: "#709425"
     },
-    type: "dark",
     action: {
       hover: "rgba(0, 0, 0, 0.01)"
     }

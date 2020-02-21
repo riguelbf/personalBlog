@@ -3,9 +3,9 @@
 import { SheetsRegistry } from "jss";
 import { createGenerateClassName } from "@material-ui/core/styles";
 
-import theme from "./styles/theme";
+import theme from "./styles/new-theme";
 
-function createPageContext() {
+function createPageContext () {
   return {
     theme,
     // This is needed in order to deduplicate the injection of CSS in the page.
@@ -17,7 +17,7 @@ function createPageContext() {
   };
 }
 
-export default function getPageContext() {
+export default function getPageContext () {
   // Make sure to create a new context for every server-side request so that data
   // isn't shared between connections (which would be bad).
   if (!process.browser) {

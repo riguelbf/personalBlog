@@ -1,6 +1,6 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 import Color from "color";
-import colors from "./colors";
+import colors from "./new-colors";
 
 const theme = createMuiTheme({
   base: {
@@ -18,7 +18,7 @@ const theme = createMuiTheme({
       linesMargin: "20px"
     },
     fonts: {
-      unstyledFamily: `Arial`,
+      unstyledFamily: `medium-content-sans-serif-font`,
       styledFamily: "Open Sans",
       styledFonts: "300,400,600"
     }

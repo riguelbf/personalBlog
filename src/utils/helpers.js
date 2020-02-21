@@ -1,6 +1,6 @@
-import theme from "../styles/theme";
+import theme from "../styles/new-theme";
 
-export function isWideScreen() {
+export function isWideScreen () {
   if (typeof window !== `undefined`) {
     const windowWidth = window.innerWidth;
     const mediaQueryL = theme.mediaQueryTresholds.L;
@@ -9,7 +9,7 @@ export function isWideScreen() {
   }
 }
 
-export function timeoutThrottlerHandler(timeouts, name, delay, handler) {
+export function timeoutThrottlerHandler (timeouts, name, delay, handler) {
   if (!timeouts[name]) {
     timeouts[name] = setTimeout(() => {
       timeouts[name] = null;
